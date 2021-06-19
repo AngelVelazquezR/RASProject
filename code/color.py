@@ -16,7 +16,7 @@ b_channel[:,:,1] = 0
 b_channel[:,:,2] = 0
 
 g_channel=frame.copy()
-g_channel[:,:,1] = 0
+g_channel[:,:,0] = 0
 g_channel[:,:,2] = 0
 
 cv2.imshow("Red", r_channel)

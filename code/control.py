@@ -19,14 +19,22 @@ GPIO.setup(spdA,GPIO.OUT)
 GPIO.output(dirA1,GPIO.LOW)
 GPIO.output(dirA2,GPIO.LOW)
 pwmA=GPIO.PWM(spdA,1000) #freq
-pwmA.start(25)
+pwmA.start(10)
 
 GPIO.output(dirA1,GPIO.HIGH)
 GPIO.output(dirA2,GPIO.LOW)
 pwmA.ChangeDutyCycle(25)
 
-
 time.sleep(5)
+
+
+
+
+
+#Final
+GPIO.output(dirA1,GPIO.LOW)
+GPIO.output(dirA2,GPIO.LOW)
+pwmA.ChangeDutyCycle(10)
 #Always at the end of the code
 GPIO.cleanup()  
 
