@@ -1,7 +1,4 @@
-"""
-sudo apt-get update
-sudo apt-get install rpi.gpio
-"""
+
 
 import RPi.GPIO as GPIO
 import time
@@ -11,8 +8,8 @@ dirA2 = 31
 spdA = 33
 
 #GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD)
-#GPIO.setmode(GPIO.BCM)
+
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(dirA1,GPIO.OUT)
 GPIO.setup(dirA2,GPIO.OUT)
 GPIO.setup(spdA,GPIO.OUT)
