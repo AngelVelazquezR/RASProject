@@ -24,10 +24,6 @@ pwmA.ChangeDutyCycle(25)
 
 time.sleep(5)
 
-
-
-
-
 #Final
 GPIO.output(dirA1,GPIO.LOW)
 GPIO.output(dirA2,GPIO.LOW)
